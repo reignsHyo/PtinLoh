@@ -1,0 +1,290 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+} 
+#ptn{
+   margin-top: 35px;
+   border-radius: 10px;
+   border: 2px solid #4D94FF;
+   
+}
+body{
+  background: white;
+  color: black;
+  font-family: arial;
+}
+header{
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 0px 3px black;
+  position: relative;
+  z-index: 989;
+  background: white;
+} 
+header.active{
+  color: black;
+}
+.menubtn.active{
+  color: white;
+  
+}
+.headerDivAll{
+  padding: 10px 2px;
+} 
+.logo,.menuDiv{
+  display: inline-block ;
+  vertical-align: middle;
+}
+.menyOver{
+  position: absolute;
+  background: rgba(0,0,0,1) ;
+  width: 100vw;
+  height: 120vh;
+  visibility: hidden;
+  left:-100vw;
+  transition: all 0.4s ease;
+  padding-top: 120px;
+  z-index: 257;
+}
+.logo a{
+  text-decoration: none;
+  color: black;
+}
+.limenover{
+  position: relative;
+  left: 5px;
+}
+.limenover a:hover{
+  text-decoration: #4D94FF underline;
+}
+.menyOver.active{
+  transition: all 0.4s ease;
+  left:0;
+  visibility: visible;
+}
+.menyOver a{
+  color: white;
+  margin: 15px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: arial;
+} 
+.menyOver li{
+  margin: 25px;
+  list-style: square outside;
+} 
+.logo h1{
+  font-size: 25px;
+  font-family: arial;
+  vertical-align: middle;
+}
+.menuDiv{
+  position: relative;
+  z-index: 999;
+  cursor: pointer;
+}
+footer{
+  height:70px;
+  background: gray;
+  text-align: center ;
+  color: white;
+  padding: 15px;
+  opacity: 0.6;
+  margin-top: 20px;
+  bottom: 0;
+  height: 85px;
+  width: 100vw;
+} 
+.menuDiv p{
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 35px;
+  font-size: 20px;
+} 
+.menuDiv p:hover{
+  text-decoration: underline;
+}
+.menuDiv li{
+  vertical-align: middle;
+} 
+li{
+  list-style: none;
+} 
+.Con1_zagolovok{
+  text-align: center ;
+  padding-top: 20px;
+}
+.Con1_zagolovok h1{
+  font-family: arial;
+  font-size: 25px;
+  color: #4D94FF;
+} 
+.Con1_zagolovok p{
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: arial;
+}
+.opisanie{
+  text-align: center;
+  padding-top: 25px;
+}
+.AllCont{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.opisanie h1{
+  font-family: arial;
+  font-size: 20px;
+} 
+.btnDiv{
+  text-align: center;
+  margin-top: 35px;
+}
+.btn1,.btn2{
+  font-weight: normal ;
+  font-size: 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 30px;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.btn1:hover,.btn2:hover{
+  background: #4D94FF;
+  color: white ;
+  border: 2px solid #4D94FF;
+  transition: all 0.2s ease;
+} 
+.Registraciya{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  margin-top: 10vh;
+}
+.Registraciya.active{
+  opacity: 1;
+  transition: all 0.3s ease;
+  visibility: visible;
+}
+.Zagolovok_reg{
+  position: relative;
+  top: 8vh;
+  text-align: center;
+}
+.Zagolovok_reg h1{
+  padding-bottom: 2px;
+  font-size:30px;
+}
+.Zagolovok_reg p{
+  padding-bottom: 2px;
+  font-size:20px;
+}
+.cards{
+  position: absolute;
+  top: 20vh; 
+  max-width: 320px: 
+}
+#Cvv{
+  padding: 5px;
+  width: 150px;
+}
+#Srok{
+  padding: 5px;
+  width: 150px;
+}
+#Number{
+  padding: 5px;
+  width: 315px;
+}
+.inputs{
+  display: inline-block;
+  max-width: 350px;
+}
+.inputs input{
+  margin: 5px;
+  border-radius: 5px;
+}
+#Name{
+    padding: 5px;
+    width: 150px;
+}
+#Pin{
+    padding: 5px;
+    width: 150px;
+}
+.submitReg{
+  text-align: center;
+}
+.submitReg h1{
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 20px;
+} 
+.submitReg h1:hover{
+  text-decoration: underline;
+} 
+.lohDiv{
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  left: - 250px;
+  transition: all 0.4s ease;
+  left: 0;
+} 
+.lohDiv.active{
+  opacity: 1;
+  transition: all 0.4s ease;
+  left: 0;
+  visibility: visible;
+}
+.lohDiv h1{
+  font-size: 50px;
+  color: #4D94FF ;
+} 
+.sspisanieCards h1{
+  font-weight: normal;
+  font-size: 25px;
+  padding-top: 10px;
+} 
+.spisanieCards{
+  position: absolute ;
+  padding: 5px 7px;
+  border: 2px #80e591 solid;
+  border-radius: 15px;
+  width: 96vw;
+  height: 80px;
+  z-index: 999;
+  top: 0;
+  color: white;
+  background:rgba(86,193,86,0.826);
+  opacity: 0;
+  backdrop-filter: blur(8px) ;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  top: -100px;
+  box-shadow: 0px 0px 5px #00000097;
+}
+.spisanieCards.active{
+  opacity: 1;
+  top: 10px;
+  visibility: visible;
+  transition: all 0.4s 3s  ease;
+}
+.allSpisanie{
+  display: flex;
+  justify-content: center;
+}
